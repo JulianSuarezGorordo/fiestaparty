@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Kablammo&family=Nunito:wght@200;300;400;500;600;700;800;900;1000&family=Pangolin&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.body{
+    background-color: rgb(253, 135, 0);
+    font-family: 'Nunito', sans-serif;
+    font-weight: 900;
+    position: relative;
+    padding-bottom: 3em;
+}
+main{
+    padding: 50px;
+}
+img{
+    width: 100%;
+}
+/*Header*/
+.menu{
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    flex: 1;
+    align-items: center;
+}
+.item-menu{
+    display: inline-block;
+    margin-inline: 25px;
+}
+.item-menu a{
+    text-decoration: none;
+    color: rgb(175, 37, 12);
+}
+.item-menu.active a, .item-menu a:hover{
+    color: white;
+}
+/*ítulos*/
+ .titulo{
+    text-align: center;
+    font-family: 'Gochi Hand', cursive;
+    color: rgb(175, 37, 12);
+ }
+ .titulo-h2{
+    text-align: center;
+    font-family: 'Gochi Hand', cursive;
+    color: rgb(175, 37, 12);
+ }
+ /*Footer*/
+ .pie{
+    text-align: center;
+    background-color: orangered;
+    padding: 1em 0;
+    position: absolute;
+    width: 100%;
+    color: rgb(124, 31, 31);
+    margin-bottom: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex: 1;
+ }
+ .pie li{
+   display: inline-block;
+   margin-inline: 25px;
+ }
+.pie li a{
+    color: rgb(124, 31, 31);
+    text-decoration: none;
+}
+/*Listas*/
+ .listas{
+    width: 400px;
+    background-color: brown;
+    color: rgb(253, 135, 0);
+    padding-block: 20px;
+    margin-inline: auto;
+    text-align: center;
+    background-position: center;
+    border: 5px solid red;
+    border-radius: 10%;
+ }
+ .listas ul{
+    list-style: none;
+ }
+ .listas ul a{
+    text-decoration: none;
+    color: rgb(253, 135, 0);
+ }
+
+ .listas-eventos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+ }
+ /*Imagenes*/
+ .lista-img{
+    list-style-type: none;
+    width: 500px;
+    margin-inline: auto;
+ }
+ .img-eventos{
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "img1   img2    img3";
+    gap: 1rem;
+    list-style-type: none;
+ }
+ .img1{
+    grid-area: img1;
+ }
+ .img2{
+    grid-area: img2;
+ }
+ .img3{
+    grid-area: img3;
+ }
+ /*iconos*/
+ .social{
+   width: 35px;
+ }
+
+ @media(max-width: 652px){
+    .menu{
+        flex-direction:column;
+        font-size: 1.5rem;
+    }
+    .titulo{
+        font-size: 1.5rem;
+    }
+    h2{
+        font-size: 1,5rem;
+    }
+    .img-eventos{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: 
+        "img1"
+        "img2"
+        "img3";
+    }
+ }
+ @media(max-widht: 430px){
+    .menu{
+        flex-direction:column;
+        font-size: 1.5rem;
+    }
+    .titulo{
+        font-size: 1.5rem;
+    }
+    .h2-lista{
+        font-size: 0.5rem;
+    }
+
+ }
