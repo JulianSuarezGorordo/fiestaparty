@@ -1,0 +1,28 @@
+.pie{
+    text-align: center;
+    background-color: orangered;
+    padding: 1em 0;
+    position: absolute;
+    width: 100%;
+    color: $footercolor;
+    margin-bottom: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex: 1;
+    list-style-type: none;
+
+    .li{
+        display: inline-block;
+        margin-inline: 25px;
+                
+        a{
+            color: $footercolor;
+            text-decoration: none;
+        }
+    }
+    
+    .social{
+        width: 35px;
+    }
+}

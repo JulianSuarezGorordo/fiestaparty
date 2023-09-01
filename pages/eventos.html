@@ -1,61 +1,73 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eventos</title>
-    <link rel="stylesheet" href="../main.css">
+    <meta name="description" content="Nuestros tipos de eventos">
+    <meta name="keywords" content="Salón, Fiesta, Cumpleaños, Eventos, Despedidas, Babyshower, Graduaciones, Diversión">
     <link rel="shortcut icon" href="../img/logo.jpg" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="../style/estilo.css">
 </head>
-<body class="body">
+<body>
     <header>
-        <nav>
-            <ul class="menu">
-                <li class="item-menu"><a href="../index.html">Inicio</a></li>
-                <li class="item-menu active"><a href="./eventos.html">Eventos</a></li>
-                <li class="item-menu"><a href="./servicios.html">Servicios</a></li>
-                <li class="item-menu"><a href="./promos.html">Promos</a></li>
-                <li class="item-menu"><a href="./contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="../index.html">Fiesta Party</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav animacion">
+                  <a class="nav-link animacion1" aria-current="page" href="../index.html">Inicio</a>
+                  <a class="nav-link animacion2 active" href="./eventos.html">Eventos</a>
+                  <a class="nav-link animacion3" href="./servicios.html">Servicios</a>
+                  <a class="nav-link animacion4" href="./promos.html">Promos</a>
+                  <a class="nav-link animacion5" href="./contacto.html">Contacto</a>
+                </div>
+              </div>
+            </div>
+          </nav>
     </header>
     <main>
-        <h1 class="titulo">NUESTROS EVENTOS</h1>
-        <div class="listas-eventos">
-            <div class="listas">
-                <h2 class="h2-lista">Eventos para adultos</h2>
-                <ul>
-                    <li>Cumpleaños</li>
-                    <li>Despedidas</li>
-                    <li>Graduaciones</li>
-                    <li>Aniversarios</li>
-                    <li>Empresariales</li>
-                </ul>
+        <section>
+            <h1 class="titulo">NUESTROS EVENTOS</h1>
+            <div class="listas-eventos">
+                <div class="listas">
+                    <h2>Eventos para adultos</h2>
+                    <ul>
+                        <li>Cumpleaños</li>
+                        <li>Despedidas</li>
+                        <li>Graduaciones</li>
+                        <li>Aniversarios</li>
+                        <li>Empresariales</li>
+                    </ul>
+                </div>
+                <div class="listas">
+                    <h2>Eventos infantiles y teens</h2>
+                    <ul>
+                        <li>Baby shower</li>
+                        <li>Bautismos</li>
+                        <li>Cumpleaños</li>
+                        <li>Egresados 7°</li>
+                        <li>Cumpleaños de 15</li>
+                        <li>Cumpleaños de 18</li>
+                    </ul>
+                </div>
             </div>
-            <div class="listas">
-                <h2 class="h2-lista">Eventos infantiles y teens</h2>
-                <ul>
-                    <li>Baby shower</li>
-                    <li>Bautismos</li>
-                    <li>Cumpleaños</li>
-                    <li>Egresados 7°</li>
-                    <li>Cumpleaños de 15</li>
-                    <li>Cumpleaños de 18</li>
-                </ul>
-            </div>
-        </div>
-        <ul class="img-eventos">
-                <li><img class="img1" src="../img/deco.jpg" alt="Decoración halloween"></li>
-                <li><img class="img2" src="../img/deco2.jpg" alt="Decoración boda"></li>
-                <li><img class="img3" src="../img/deco2.jpg" alt="Decoración cumpleaños infantil"></li>
-         </ul>
+            <ul class="img-eventos">
+                    <li><img class="img1" src="../img/deco.jpg" alt="Decoración halloween"></li>
+                    <li><img class="img2" src="../img/deco2.jpg" alt="Decoración boda"></li>
+                    <li><img class="img3" src="../img/deco2.jpg" alt="Decoración cumpleaños infantil"></li>
+             </ul>
+        </section>
     </main>
     <footer>
         <ul class="pie">
             <li><a target="_blank" href="https://www.facebook.com/FiestaPartyEventos/?locale=es_LA"><img class="social" src="../img/facebook.png" alt="Facebook"></a></li>
             <li><a target="_blank" href="https://www.instagram.com/fiestapartyrosario/?hl=af"><img class="social" src="../img/instagram.png" alt="Instagram"></a></li>
-            <li><img class="social" src="../img/whatsapp.png" alt="WhatsApp"></li>
+            <li><a target="_blank" href="https://wa.me/+5493413751207"><img class="social" src="../img/whatsapp.png" alt="WhatsApp"></a></li>
             <li>Av. Pres. Perón 6226, S2000 Rosario, Santa Fe</li>
         </ul>
     </footer>

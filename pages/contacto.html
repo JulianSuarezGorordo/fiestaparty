@@ -1,41 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
-    <link rel="stylesheet" href="../main.css">
+    <meta name="description" content="Conoce nuestras redes y WhatsApp">
+    <meta name="keywords" content="Salón, Fiesta, Cumpleaños, Eventos, Despedidas, Babyshower, Graduaciones, Diversión">
     <link rel="shortcut icon" href="../img/logo.jpg" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="../style/estilo.css">
 </head>
-<body class="body">
+<body>
     <header>
-        <nav>
-            <ul class="menu">
-                <li class="item-menu"><a href="../index.html">Inicio</a></li>
-                <li class="item-menu"><a href="./eventos.html">Eventos</a></li>
-                <li class="item-menu"><a href="./servicios.html">Servicios</a></li>
-                <li class="item-menu"><a href="./promos.html">Promos</a></li>
-                <li class="item-menu active"><a href="./pages/contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="../index.html">Fiesta Party</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav animacion">
+                  <a class="nav-link animacion1" aria-current="page" href="../index.html">Inicio</a>
+                  <a class="nav-link animacion2" href="./eventos.html">Eventos</a>
+                  <a class="nav-link animacion3" href="./servicios.html">Servicios</a>
+                  <a class="nav-link animacion4" href="./promos.html">Promos</a>
+                  <a class="nav-link animacion5 active" href="./contacto.html">Contacto</a>
+                </div>
+              </div>
+            </div>
+          </nav>
     </header>
     <main>
-        <h1 class="titulo">CONTACTO</h1>
-        <div class="listas">
-            <h2>Medios de contacto</h2>
-            <ul>
-                <li>Facebook: <a target="_blank" href="https://www.facebook.com/FiestaPartyEventos/?locale=es_LA">Fiesta Party eventos</a></li>
-                <li>Instagram: <a target="_blank" href="https://www.instagram.com/fiestapartyrosario/?hl=af">fiesta party rosario</a></li>
-                <li>WhatsApp: 3416598706</li>
-            </ul>
-        </div>
+        <section>
+            <h1 class="titulo">CONTACTO</h1>
+            <h2 class="titulo">Medios de contacto</h2>
+            <div class="listas_contacto rounded-pill">
+                <p>Facebook: <a target="_blank" href="https://www.facebook.com/FiestaPartyEventos/?locale=es_LA">Fiesta Party eventos</a></p>
+                <p>Instagram: <a target="_blank" href="https://www.instagram.com/fiestapartyrosario/?hl=af">Fiesta Party Rosario</a></p>
+                <p>WhatApp: <a target="_blank" href="https://wa.me/+5493413751207">3413751207</a></p>
+            </div>
+            <div class="mapa">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3347.456709423945!2d-60.709167523447164!3d-32.9653504728351!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b7ace931fda1fd%3A0xe11989fdcb2f0bf2!2sFiesta%20Party!5e0!3m2!1ses-419!2sar!4v1693513970974!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
     </main>
     <footer>
         <ul class="pie">
             <li><a target="_blank" href="https://www.facebook.com/FiestaPartyEventos/?locale=es_LA"><img class="social" src="../img/facebook.png" alt="Facebook"></a></li>
             <li><a target="_blank" href="https://www.instagram.com/fiestapartyrosario/?hl=af"><img class="social" src="../img/instagram.png" alt="Instagram"></a></li>
-            <li><img class="social" src="../img/whatsapp.png" alt="WhatsApp"></li>
+            <li><a target="_blank" href="https://wa.me/+5493413751207"><img class="social" src="../img/whatsapp.png" alt="WhatsApp"></a></li>
             <li>Av. Pres. Perón 6226, S2000 Rosario, Santa Fe</li>
         </ul>
     </footer>

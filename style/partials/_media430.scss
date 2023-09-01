@@ -1,0 +1,16 @@
+@media(max-widht: 430px){
+    .titulo{
+        font-size: 1.5rem;
+    }
+    .contenedor-promo{
+        width: 100%;
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+        "promo1"
+        "promo2";
+        column-gap: 1px;
+    }
+}

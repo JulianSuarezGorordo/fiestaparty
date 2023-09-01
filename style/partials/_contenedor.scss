@@ -1,0 +1,17 @@
+.contenedor{
+    margin: 2rem;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    flex-wrap: wrap;
+
+    > *{
+        flex: 1;
+    }
+
+    .contenedor_titulo{
+        text-align: center;
+        font-family: $fontgochi;
+        color: $footercolor;
+    }
+}

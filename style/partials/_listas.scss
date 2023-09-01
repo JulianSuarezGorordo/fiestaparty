@@ -1,0 +1,17 @@
+.listas-eventos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+ 
+    .listas{
+        background-color: brown;
+        color: $maincolor;
+        text-align: center;
+        background-position: center;
+        border: 5px solid red;
+    
+        ul{
+            list-style-type: none;
+        }
+    }
+}

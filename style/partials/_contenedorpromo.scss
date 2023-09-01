@@ -1,0 +1,16 @@
+.contenedor-promo{
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "promo1 promo2";
+    gap: 5px;
+
+    .promo1{
+        grid-area: promo1;
+    }
+
+    .promo2{
+        grid-area: promo2;
+    }
+}

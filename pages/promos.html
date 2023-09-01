@@ -1,40 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Promos</title>
-    <link rel="stylesheet" href="../main.css">
+    <meta name="description" content="Conoce nuestras promociones">
+    <meta name="keywords" content="Salón, Fiesta, Cumpleaños, Eventos, Despedidas, Babyshower, Graduaciones, Diversión">
     <link rel="shortcut icon" href="../img/logo.jpg" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="../style/estilo.css">
 </head>
-<body class="body">
+<body>
     <header>
-        <nav>
-            <ul class="menu">
-                <li class="item-menu"><a href="../index.html">Inicio</a></li>
-                <li class="item-menu"><a href="./eventos.html">Eventos</a></li>
-                <li class="item-menu"><a href="./servicios.html">Servicios</a></li>
-                <li class="item-menu active"><a href="./promos.html">Promos</a></li>
-                <li class="item-menu"><a href="./contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="../index.html">Fiesta Party</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav animacion">
+                  <a class="nav-link animacion1" aria-current="page" href="../index.html">Inicio</a>
+                  <a class="nav-link animacion2" href="./eventos.html">Eventos</a>
+                  <a class="nav-link animacion3" href="./servicios.html">Servicios</a>
+                  <a class="nav-link animacion4 active" href="./promos.html">Promos</a>
+                  <a class="nav-link animacion5" href="./contacto.html">Contacto</a>
+                </div>
+              </div>
+            </div>
+          </nav>
     </header>
     <main>
-        <h1 class="titulo">PROMOCIONES</h1>
-        <h2 class="titulo">Mantenete al tanto de nuestas promociones vigentes</h2>
-        <div>
-            <ul class="lista-img">
-                <li><img class="img-eventos" src="../img/promo.jpg" alt="promo 7mo"></li>
-                <li><img class="img-eventos" src="../img/merlina.jpg" alt="Show infantil"></li>
-            </ul>
-        </div>
+        <section>
+            <h1 class="titulo">PROMOCIONES</h1>
+            <p class="titulo">Mantenete al tanto de nuestas promociones vigentes</p>
+            <div class="contenedor-promo">
+                <div class="promo1">
+                    <img src="../img/promo.jpg" alt="promo 7mo">
+                </div>
+                <div class="promo2">
+                    <img src="../img/merlina.jpg" alt="Show infantil">
+                </div>
+            </div>
+        </section>
     </main>
     <footer>
         <ul class="pie">
             <li><a target="_blank" href="https://www.facebook.com/FiestaPartyEventos/?locale=es_LA"><img class="social" src="../img/facebook.png" alt="Facebook"></a></li>
             <li><a target="_blank" href="https://www.instagram.com/fiestapartyrosario/?hl=af"><img class="social" src="../img/instagram.png" alt="Instagram"></a></li>
-            <li><img class="social" src="../img/whatsapp.png" alt="WhatsApp"></li>
+            <li><a target="_blank" href="https://wa.me/+5493413751207"><img class="social" src="../img/whatsapp.png" alt="WhatsApp"></a></li>
             <li>Av. Pres. Perón 6226, S2000 Rosario, Santa Fe</li>
         </ul>
     </footer>

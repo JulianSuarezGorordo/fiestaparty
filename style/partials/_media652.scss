@@ -1,0 +1,26 @@
+@media(max-width: 652px){
+    .titulo{
+        font-size: 1.5rem;
+    }
+    h2{
+        font-size: 1,5rem;
+    }
+    .img-eventos{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: 
+        "img1"
+        "img2"
+        "img3";
+    }
+    .contenedor-promo{
+        width: 70%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+        "promo1"
+        "promo2";
+        gap: 1px;
+    }
+}

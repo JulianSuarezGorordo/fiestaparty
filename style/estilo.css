@@ -1,0 +1,223 @@
+@import url("https://fonts.googleapis.com/css2?family=Kablammo&family=Nunito:wght@200;300;400;500;600;700;800;900;1000&family=Pangolin&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+}
+*::-moz-selection {
+  background-color: #e92c0b;
+  color: aliceblue;
+}
+*::selection {
+  background-color: #e92c0b;
+  color: aliceblue;
+}
+
+body {
+  background-color: #fd8700;
+  font-weight: 900;
+  position: relative;
+  padding-bottom: 3em;
+}
+
+main {
+  padding: 50px;
+}
+
+img {
+  width: 100%;
+}
+
+.animacion1 {
+  animation: rotate-in-center 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation-delay: 1s;
+}
+
+.animacion2 {
+  animation: rotate-in-center 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation-delay: 2s;
+}
+
+.animacion3 {
+  animation: rotate-in-center 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation-delay: 3s;
+}
+
+.animacion4 {
+  animation: rotate-in-center 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation-delay: 4s;
+}
+
+.animacion5 {
+  animation: rotate-in-center 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation-delay: 5s;
+}
+@keyframes rotate-in-center {
+  0% {
+    transform: rotate(-360deg);
+    opacity: 0;
+  }
+  100% {
+    transform: rotate(0);
+    opacity: 1;
+  }
+}
+.titulo {
+  text-align: center;
+  font-family: "Gochi Hand", cursive;
+  color: #af250c;
+}
+
+.contenedor {
+  margin: 2rem;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.contenedor > * {
+  flex: 1;
+}
+.contenedor .contenedor_titulo {
+  text-align: center;
+  font-family: "Gochi Hand", cursive;
+  color: #7c1f1f;
+}
+
+.contenedor-promo {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "promo1 promo2";
+  gap: 5px;
+}
+.contenedor-promo .promo1 {
+  grid-area: promo1;
+}
+.contenedor-promo .promo2 {
+  grid-area: promo2;
+}
+
+.listas-eventos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.listas-eventos .listas {
+  background-color: brown;
+  color: #fd8700;
+  text-align: center;
+  background-position: center;
+  border: 5px solid red;
+}
+.listas-eventos .listas ul {
+  list-style-type: none;
+}
+
+.mapa {
+  margin-top: 4px;
+  height: 25vh;
+  display: flex;
+  justify-content: center;
+}
+
+.img-eventos {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: "img1   img2    img3";
+  gap: 1rem;
+  list-style-type: none;
+}
+.img-eventos .img1 {
+  grid-area: img1;
+}
+.img-eventos .img2 {
+  grid-area: img2;
+}
+.img-eventos .img3 {
+  grid-area: img3;
+}
+
+.pie {
+  text-align: center;
+  background-color: orangered;
+  padding: 1em 0;
+  position: absolute;
+  width: 100%;
+  color: #7c1f1f;
+  margin-bottom: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex: 1;
+  list-style-type: none;
+}
+.pie .li {
+  display: inline-block;
+  margin-inline: 25px;
+}
+.pie .li a {
+  color: #7c1f1f;
+  text-decoration: none;
+}
+.pie .social {
+  width: 35px;
+}
+
+.listas_contacto {
+  background-color: brown;
+  color: #fd8700;
+  text-align: center;
+  background-position: center;
+  border: 5px solid red;
+}
+.listas_contacto a {
+  text-decoration: none;
+  color: #fd8700;
+}
+
+@media (max-width: 771px) {
+  .contenedor {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (max-width: 652px) {
+  .titulo {
+    font-size: 1.5rem;
+  }
+  h2 {
+    font-size: 1, 5rem;
+  }
+  .img-eventos {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "img1" "img2" "img3";
+  }
+  .contenedor-promo {
+    width: 70%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "promo1" "promo2";
+    gap: 1px;
+  }
+}
+@media (max-widht: 430px) {
+  .titulo {
+    font-size: 1.5rem;
+  }
+  .contenedor-promo {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "promo1" "promo2";
+    -moz-column-gap: 1px;
+         column-gap: 1px;
+  }
+}/*# sourceMappingURL=estilo.css.map */
