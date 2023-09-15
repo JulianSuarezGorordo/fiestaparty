@@ -14,7 +14,8 @@
         "img3";
     }
     .contenedor-promo{
-        width: 70%;
+        max-width: 100%;
+        align-content: center;
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr;
@@ -22,5 +23,18 @@
         "promo1"
         "promo2";
         gap: 1px;
+        place-items: center;
+        margin: auto;
+    }
+    .listas_contacto{
+        margin-inline: 10%;
+
+        p{
+            font-size: 15px;
+        }
+    }
+
+    .listas-eventos{
+        font-size: 15px;
     }
 }

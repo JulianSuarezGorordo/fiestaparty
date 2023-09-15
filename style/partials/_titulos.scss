@@ -2,4 +2,7 @@
     text-align: center;
     font-family: $fontgochi;
     color: $titlecolor;
+    animation:focus-in-expand .8s cubic-bezier(.25,.46,.45,.94) both;
+    animation-delay: 1s;
  }
+@keyframes focus-in-expand{0%{letter-spacing:-.5em;filter:blur(12px);opacity:0}100%{filter:blur(0);opacity:1}}

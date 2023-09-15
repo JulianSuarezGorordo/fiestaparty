@@ -1,16 +1,46 @@
 .contenedor-promo{
-    height: 100vh;
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas: 
-    "promo1 promo2";
-    gap: 5px;
+    padding: 60px;
+    display: flex;
+    gap: 30px;
+    -webkit-animation: tilt-in-bottom-1 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	animation: tilt-in-bottom-1 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation-delay: 2.5s;
 
     .promo1{
-        grid-area: promo1;
+        max-width: 100%;
+        border-radius: 30px;
+        overflow: hidden;
     }
 
     .promo2{
-        grid-area: promo2;
+        max-width: 100%;
+        border-radius: 30px;
+        overflow: hidden;
     }
 }
+
+ @-webkit-keyframes tilt-in-bottom-1 {
+    0% {
+      -webkit-transform: rotateY(30deg) translateY(300px) skewY(-30deg);
+              transform: rotateY(30deg) translateY(300px) skewY(-30deg);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: rotateY(0deg) translateY(0) skewY(0deg);
+              transform: rotateY(0deg) translateY(0) skewY(0deg);
+      opacity: 1;
+    }
+  }
+  @keyframes tilt-in-bottom-1 {
+    0% {
+      -webkit-transform: rotateY(30deg) translateY(300px) skewY(-30deg);
+              transform: rotateY(30deg) translateY(300px) skewY(-30deg);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: rotateY(0deg) translateY(0) skewY(0deg);
+              transform: rotateY(0deg) translateY(0) skewY(0deg);
+      opacity: 1;
+    }
+  }
+  

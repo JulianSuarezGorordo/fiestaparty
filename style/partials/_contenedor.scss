@@ -9,9 +9,18 @@
         flex: 1;
     }
 
+    .contenedor_img{
+        transition: transform .3s;
+    }
+    
+    .contenedor_img:hover{
+        transform: scale(1.1) translateY(-15px);
+        box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    }
+
     .contenedor_titulo{
         text-align: center;
         font-family: $fontgochi;
-        color: $footercolor;
+        color: $titlecolor;
     }
 }

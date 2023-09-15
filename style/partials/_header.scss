@@ -3,7 +3,7 @@
     .animacion#{$it} {
         -webkit-animation:rotate-in-center .6s cubic-bezier(.25,.46,.45,.94) both;
         animation:rotate-in-center .6s cubic-bezier(.25,.46,.45,.94) both;
-        animation-delay: $it*1s;
+        animation-delay: $it*.5s;
     }
 
 }

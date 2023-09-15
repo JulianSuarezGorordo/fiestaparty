@@ -1,4 +1,4 @@
-@media(max-widht: 430px){
+@media(max-widht: 460px){
     .titulo{
         font-size: 1.5rem;
     }
@@ -12,5 +12,8 @@
         "promo1"
         "promo2";
         column-gap: 1px;
+    }
+    .listas_contacto{
+        margin-inline: auto;
     }
 }
